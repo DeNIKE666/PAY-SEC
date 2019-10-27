@@ -11,5 +11,30 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+//mix.js('resourcess/js/app.js', 'public/js')
+  // .sass('resourcess/sass/app.scss', 'public/css');
+
+mix.styles([
+    'resources/assets/css/bootstrap.min.css',
+    'resources/assets/css/jquery.fancybox.min.css',
+    'resources/assets/css/nice-select.css',
+    'resources/assets/css/owl.carousel.min.css',
+    'resources/assets/css/style.css',
+    'resources/assets/css/custom.css',
+    'resources/assets/css/all.min.css',
+], 'public/assets/app.css').version();
+
+mix.styles([
+    'resources/assets/js/jquery-3.3.1.min.js',
+    'resources/assets/js/jquery-ui.min.js',
+    'resources/assets/js/bootstrap.min.js',
+    'resources/assets/js/owl.carousel.min.js',
+    'resources/assets/js/owl.carousel2.thumbs.min.js',
+    'resources/assets/js/jquery.countdown.min.js',
+    'resources/assets/js/jquery.fancybox.min.js',
+    'resources/assets/js/jquery.nice-select.min.js',
+    'resources/assets/js/scripts.js',
+], 'public/assets/app.js').version();
+
+mix.copy('resources/assets/fonts' , 'public/assets/fonts')
+mix.copy('resources/assets/images' , 'public/assets/images')
