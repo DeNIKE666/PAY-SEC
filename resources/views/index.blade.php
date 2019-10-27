@@ -11,7 +11,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Quis ipsum suspe ultrices gravida. Risus commodo viverra
                             maecenas.</p>
-                        <a href="#" class="btn btn-filled btn-round"><span class="bh"></span> <span>НАЧАТЬ ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</span></a>
+                        <a href="{{ route('register') }}" class="btn btn-filled btn-round"><span class="bh"></span> <span>НАЧАТЬ ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</span></a>
                     </div>
                 </div>
             </div>

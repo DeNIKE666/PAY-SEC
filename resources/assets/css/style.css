@@ -4670,3 +4670,11 @@ img.an1.animg5 {
   -ms-transform-origin: 47.3% 50%;
   transform-origin: 47.3% 50%;
 }
+
+.error {
+    padding: 25px;
+    background: #254fe6b8;
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+}

@@ -15,6 +15,11 @@ Route::prefix('/')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
 
+Route::prefix('/cabinet')->namespace('Cabinet')->middleware('auth')->group(function () {
+    Route::get('/', 'CabinetController@index')->name('cabinet');
+});
+
+
 Route::group(['prefix' => 'account'], function () {
     Auth::routes();
 });

@@ -4824,6 +4824,14 @@ img.an1.animg5 {
   transform-origin: 47.3% 50%;
 }
 
+.error {
+    padding: 25px;
+    background: #254fe6b8;
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+}
+
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap');
 
 body {

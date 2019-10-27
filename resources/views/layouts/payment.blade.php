@@ -16,14 +16,13 @@
     <!-- Color Palette. simple uncommned if you need any color palette -->
     <!-- <link rel="stylesheet" href="css/switcher/css/red.css"> -->
 
-    <title>Roysha- Money Transfer and Online Payments HTML Template</title>
+    <title>@yield('title')</title>
 </head>
 
-
 @if(Request::route()->getPrefix() == '/account')
-  @include('layouts.__inc_body.auth')
+  @include('__partials.body.noDefault')
 @else
-    @include('layouts.__inc_body.default')
+    @include('__partials.body.default')
 @endif
 
 </html>
