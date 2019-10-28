@@ -38,3 +38,25 @@ mix.styles([
 
 mix.copy('resources/assets/fonts' , 'public/assets/fonts')
 mix.copy('resources/assets/images' , 'public/assets/images')
+
+/**
+ * Dashboard
+ */
+mix.styles([
+    'resources/assets/css/dashboard/style.css',
+    'resources/assets/css/bootstrap.min.css',
+    'resources/assets/css/dashboard/daterangepicker.css',
+    'resources/assets/css/dashboard/currency-flags.min.css',
+    'resources/assets/css/dashboard/bootstrap-select.min.css',
+    'resources/assets/css/dashboard/ex-css.css',
+    'resources/assets/css/all.min.css',
+], 'public/assets/dashboard.css').version();
+
+mix.styles([
+    'resources/assets/js/dashboard/jquery.min.js',
+    'resources/assets/js/dashboard/bootstrap.bundle.min.js',
+    'resources/assets/js/dashboard/moment.min.js',
+    'resources/assets/js/dashboard/daterangepicker.js',
+    'resources/assets/js/dashboard/bootstrap-select.min.js',
+    'resources/assets/js/dashboard/custom.js',
+], 'public/assets/dashboard.js').version();
